@@ -22,18 +22,18 @@ export function ProjectCard({
   projectImage
 }: Props) {
   return (
-    <Card className="relative mx-auto w-full max-w-sm pt-0">
-      <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
+    <Card className="relative mx-auto w-full max-w-sm pt-0 w-3/4">
+      <div className="absolute inset-0 z-30 aspect-video" />
       <img
         src={projectImage}
         alt="Event cover"
-        className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40 "
+        className="relative z-20 aspect-video w-full object-cover  "
         
       />
       <CardHeader>
         <CardAction></CardAction>
-        <CardTitle>{projectName}</CardTitle>
-        <CardDescription>{projectDescription}</CardDescription>
+        <CardTitle className="px-5 py-2">{projectName}</CardTitle>
+        <CardDescription className="px-5 py-2">{projectDescription}</CardDescription>
       </CardHeader>
       <CardFooter>
         <a
