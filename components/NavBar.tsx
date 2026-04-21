@@ -3,31 +3,29 @@
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+// import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const NavBar = () => {
   return (
     <nav className="p-4">
       <Sheet>
-        <SheetTrigger asChild>
-          <Button variant="outline" size="icon">
-            <Menu className="w-5 h-5" />
+        <SheetTrigger asChild className="border-none">
+          <Button variant={"ghost"} className="w-10 h-10">
+            <Menu className="!w-5.5 !h-5.5"/>
           </Button>
         </SheetTrigger>
 
         <SheetContent side="left">
           <SheetHeader>
-            <SheetTitle>YOUSIF MAQDASI</SheetTitle>
+            <SheetTitle className="mb-1">YOUSIF MAQDASI</SheetTitle>
             <SheetDescription>Fullstack Developer Portfolio</SheetDescription>
           </SheetHeader>
 
@@ -35,11 +33,8 @@ const NavBar = () => {
             <Link href="/" className="block">
               Home
             </Link>
-            <Link href="/projects" className="block">
+            <Link href="/my-projects" className="block">
               Projects
-            </Link>
-            <Link href="/skills" className="block">
-              Skills
             </Link>
             <Link href="/about" className="block">
               About
@@ -50,7 +45,7 @@ const NavBar = () => {
           </div>
 
 
-          // ADD LATER
+          {/* // ADD LATER */}
             {/* <div className="px-4 pb-4">
               <p className="text-sm mb-3 text-muted-foreground">
                 Connect with me
