@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import StackIcon from "tech-stack-icons";
+import { TechStack } from "@/components/TechStacks";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
             Hello there, I'm
           </p>
 
-          <h1 className="text-4xl font-semibold tracking-tight leading-tight mb-2">
+          <h1 className="text-3xl font-semibold tracking-tight leading-tight mb-2">
             Yousif Maqdasi
           </h1>
 
@@ -34,10 +34,8 @@ export default function Home() {
               className="rounded-[15px]"
               width={230}
               height={230}
-              
             />
           </div>
-
 
           <Link
             href={"my-projects"}
@@ -58,12 +56,11 @@ export default function Home() {
             hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer"
             >
               <p className="font-medium mb-1">Frontend</p>
-              
+
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Building responsive and performant interfaces with React
               </p>
             </div>
-            
 
             <div
               className="bg-card border border-border p-7 rounded-xl h-34 justify-center flex flex-col 
@@ -87,8 +84,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-12 text-left">
-          <h2 className="text-xl font-semibold tracking-tight mb-5.5 text-center">
+        <section className="mt-12 text-left p-7 rounded-xl">
+          <h2 className="text-xl font-semibold tracking-tight mb-5.5 ">
             My Journey Into Full-Stack Development
           </h2>
 
@@ -98,30 +95,26 @@ export default function Home() {
           </p>
 
           <p className="text-sm text-muted-foreground leading-relaxed mb-4 m-auto">
-            I did not start this journey because I had everything figured out,
-            but because I was curious and honestly, over time, it became
-            something that i now genuinely enjoy. I like figuring things,
-            solving annoying problems out and pushing myself even when things
-            dont always go as expected
-          </p>
-
-          <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-            Outside of coding, I keep things simple. I spend time and hang out
-            with people I care about, stay active and healthy, and try to stay
-            consistent with whatever I’m working on.
+            My journey started as a curiosity and over time, it became something
+            that i now genuinely enjoy. I like figuring things, solving annoying
+            problems out and pushing myself to the fullest.
           </p>
 
           <p className="text-sm text-muted-foreground leading-relaxed mb-4">
             Right now, I’m focused on becoming a strong full-stack developer and
-            I’m currently looking for an internship (available from [date]). If
-            you'd like to connect with me or learn more, you can reach me at{" "}
-            <a
-              href="mailto:yousifmaqdasi@icloud.com"
-              className="text-primary underline hover:opacity-80"
-            >
-              yousif.maqdasi@chasacademy.se
-            </a>{" "}
-            or feel free to reach me on{" "}
+            I’m actively looking for an internship (available from [date]). If
+            you’d like to connect or learn more, feel free to reach out:
+          </p>
+
+          <a
+            href="mailto:yousifmaqdasi@icloud.com"
+            className="block text-primary underline hover:opacity-80 text-sm mb-2"
+          >
+            yousif.maqdasi@chasacademy.se
+          </a>
+
+          <p className="text-sm text-muted-foreground">
+            Or connect with me on{" "}
             <a
               href="https://www.linkedin.com/in/yousif-maqdasi-731578382/"
               target="_blank"
@@ -130,9 +123,10 @@ export default function Home() {
             >
               LinkedIn
             </a>
-            .
           </p>
         </section>
+
+        <TechStack></TechStack>
 
         <Link
           href={"contact"}
