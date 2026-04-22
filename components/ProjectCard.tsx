@@ -23,7 +23,7 @@ export function ProjectCard({
 }: Props) {
   return (
     <Card className="relative mx-auto pt-0 w-3/4 md:max-w-110 gap-6 cursor-pointer transition-transform duration-200 
-    hover:-translate-y-1">
+    hover:-translate-y-1 h-150">
       <div className="absolute inset-0 z-30 aspect-video" />
       <img
         src={projectImage}
