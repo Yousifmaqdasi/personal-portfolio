@@ -95,7 +95,7 @@ export default function Home() {
             href="mailto:yousifmaqdasi@icloud.com"
             className="block text-primary underline hover:opacity-80 text-sm mb-2"
           >
-            yousif.maqdasi@chasacademy.se
+            yousifmaqdasi@icloud.com
           </a>
 
           <p className="text-sm text-muted-foreground">
