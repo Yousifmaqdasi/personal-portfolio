@@ -8,50 +8,53 @@ import SkillsCard from "@/components/SkillsCard";
 export default function Home() {
   return (
     <main>
-      <div className="px-9 py-8 max-w-md mx-auto flex flex-col gap-10 items-center text-center">
-        <section>
-          <div className="flex gap-3 items-center justify-center"></div>
-          <p className="text-base text-muted-foreground mb-2">
-            Hello there, I'm
-          </p>
+      <div className="px-9 py-8 max-w-md mx-auto flex flex-col gap-10 items-center text-center md:max-w-4xl">
+        <section className="px-4 md:px-12 md:max-w-2xl">
+          <div className="md:flex md:items-center justify-between">
+            <div className="md:w-2/4">
+              <p className="text-base text-muted-foreground mb-2">
+                Hello there, I'm
+              </p>
 
-          <h1 className="text-3xl font-semibold tracking-tight leading-tight mb-2">
-            Yousif Maqdasi
-          </h1>
+              <h1 className="text-3xl font-semibold tracking-tight leading-tight mb-2">
+                Yousif Maqdasi
+              </h1>
 
-          <p className="text-base font-medium text-primary mb-3">
-            Fullstack JavaScript Developer
-          </p>
+              <p className="text-base font-medium text-primary mb-3">
+                Fullstack JavaScript Developer
+              </p>
 
-          <p className="text-sm text-muted-foreground leading-relaxed mb-6 ">
-            I create fast, scalable web applications using JavaScript, React,
-            and Node.js.
-          </p>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                I create fast, scalable web applications using JavaScript,
+                React, and Node.js.
+              </p>
 
-          <div className="my-10 flex flex-col items-center">
-            <Image
-              src={"/IMG_0134 2.png"}
-              alt="Yousif Maqdasi"
-              className="rounded-[15px]"
-              width={210}
-              height={210}
-            />
+              <Link
+                href={"my-projects"}
+                className="inline-block px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium"
+              >
+                View My Work →
+              </Link>
+            </div>
+
+            <div className="my-10 md:my-0 flex justify-center">
+              <Image
+                src={"/IMG_0134 2.png"}
+                alt="Yousif Maqdasi"
+                className="rounded-[15px]"
+                width={210}
+                height={210}
+              />
+            </div>
           </div>
-
-          <Link
-            href={"my-projects"}
-            className="inline-block px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium"
-          >
-            View My Work →
-          </Link>
         </section>
 
-        <section className="mt-8">
+        <section className="mt-8 md:mt-20">
           <h2 className="text-xl font-semibold tracking-tight mb-8">
             Areas I Focus On as a Developer
           </h2>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
             <SkillsCard
               title="Frontend"
               description="Building responsive and performant interfaces."
@@ -69,7 +72,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-8 text-left p-7 rounded-xl">
+        <section className="mt-8 text-left p-7 rounded-xl md:text-center md:w-4/5">
           <h2 className="text-xl font-semibold tracking-tight mb-5.5 ">
             My Journey Into Full-Stack Development
           </h2>
@@ -88,7 +91,7 @@ export default function Home() {
           <p className="text-sm text-muted-foreground leading-relaxed mb-4">
             Right now, I’m focused on becoming a strong full-stack developer and
             I’m actively looking for an internship (available from [date]). If
-            you’d like to connect or learn more, feel free to reach out:
+            you’d like to connect or learn more, feel free to send me an email to:
           </p>
 
           <a

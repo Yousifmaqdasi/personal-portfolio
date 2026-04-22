@@ -14,14 +14,14 @@ type Props = {
 
 export function ContactCard({ title, content, icon: Icon }: Props) {
   return (
-    <Card size="sm" className="mx-auto w-full max-w-sm b-0 ring-0">
-      <CardHeader>
-        <div className="flex gap-2.5 items-center">
-          <Icon className="w-4.5 h-4.5"></Icon>
-          <CardTitle>{title}</CardTitle>
+    <Card className="b-0 ring-0 p-0">
+      <CardHeader className="p-0">
+        <div className="flex gap-2.5 items-center mb-1.5 pl-0.5">
+          <Icon strokeWidth={1.5} className="w-4.5"></Icon>
+          <CardTitle className="font-extralight text-sm">{title}</CardTitle>
         </div>
 
-        <CardDescription>{content}</CardDescription>
+        <CardDescription className="text-left">{content}</CardDescription>
       </CardHeader>
     </Card>
   );

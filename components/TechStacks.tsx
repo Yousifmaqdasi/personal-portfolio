@@ -64,12 +64,12 @@ const techStack = [
 
 export function TechStack() {
   return (
-    <section className="mb-5 p-7 rounded-xl text-center">
+    <section className="mb-5 p-7 rounded-xl text-center w-3/4">
       <h2 className="text-xl font-semibold tracking-tight mb-10">
         Technologies I Work With
       </h2>
 
-      <div className="grid grid-cols-3 sm:grid-cols-5 gap-10">
+      <div className="grid grid-cols-3 sm:grid-cols-5 gap-10 lg:grid-cols-3">
         {techStack.map((tech, i) => {
           const Icon = tech.icon;
 
