@@ -3,12 +3,13 @@ import { Field, FieldGroup, FieldLabel, FieldSet } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import ContactCard from "@/components/ContactCard";
-import { MapPin, Mail, Phone } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
 
 export function ContactForm() {
   return (
     <div className="w-full max-w-md">
-      <form>
+      <form action={"https://formspree.io/f/mojykoyw"} method="POST">
+      <input type="hidden" name="_next" value="http://localhost:3000/my-projects" />
         <FieldGroup>
           <FieldSet>
             <FieldGroup>
@@ -19,6 +20,7 @@ export function ContactForm() {
                   id="name"
                   placeholder="Enter name"
                   required
+                  name="name"
                 />
               </Field>
               <Field>
@@ -28,6 +30,8 @@ export function ContactForm() {
                   id="email"
                   placeholder="Enter email"
                   required
+                  name="email"
+                  type="email"
                 />
               </Field>
               <Field>
@@ -37,14 +41,17 @@ export function ContactForm() {
                   placeholder="Write your message here..."
                   className="resize-none placeholder:text-xs"
                   required
+                  name="message"
                 />
               </Field>
             </FieldGroup>
           </FieldSet>
 
           <Field orientation="horizontal">
-            <Button type="submit">Send message</Button>
-            <Button variant="outline" type="button">
+            <Button className="cursor-pointer" type="submit">
+              Send message
+            </Button>
+            <Button className="cursor-pointer" variant="outline" type="reset">
               Clear
             </Button>
           </Field>
@@ -62,9 +69,8 @@ export function ContactForm() {
           <ContactCard
             icon={Mail}
             title="Email"
-            content="Yousifmaqdasi@icloud@.com"
+            content="Yousifmaqdasi@icloud.com"
           />
-          <ContactCard icon={Phone} title="Phone" content="+46 72 945 81 88" />
         </div>
       </form>
     </div>

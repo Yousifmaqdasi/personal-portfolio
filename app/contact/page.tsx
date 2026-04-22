@@ -1,6 +1,6 @@
 import ContactForm from "@/components/ContactForm";
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <div className="flex flex-col item-center justify-center m-auto p-12">
       <div className="mb-6 max-w-xl">
@@ -20,4 +20,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

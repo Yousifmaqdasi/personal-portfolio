@@ -54,7 +54,7 @@ export default function Home() {
             Areas I Focus On as a Developer
           </h2>
 
-          <div className="flex flex-col gap-4 md:flex-row">
+          <div className="flex flex-col gap-4 md:flex-row md:flex-wrap">
             <SkillsCard
               title="Frontend"
               description="Building responsive and performant interfaces."
@@ -68,6 +68,21 @@ export default function Home() {
             <SkillsCard
               title="APIs"
               description=" Clean, secure REST APIs for reliable communication."
+            ></SkillsCard>
+
+            <SkillsCard
+              title="Security"
+              description="Auth, validation, and protection against vulnerabilities."
+            ></SkillsCard>
+
+            <SkillsCard
+              title="Databases"
+              description=" Efficient data modeling and queries."
+            ></SkillsCard>
+
+            <SkillsCard
+              title="Deployment"
+              description="Shipping apps to production environments."
             ></SkillsCard>
           </div>
         </section>
@@ -89,9 +104,9 @@ export default function Home() {
           </p>
 
           <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-            Right now, I’m focused on becoming a strong full-stack developer and
-            I’m actively looking for an internship (available from [date]). If
-            you’d like to connect or learn more, feel free to send me an email to:
+            I’m currently focused on growing as a full-stack developer and am
+            actively seeking an internship (LIA) between December 2026 and May 2027. If you’d
+            like to connect or learn more about my work, feel free to reach out via email:
           </p>
 
           <a
@@ -102,7 +117,7 @@ export default function Home() {
           </a>
 
           <p className="text-sm text-muted-foreground">
-            Or connect with me on{" "}
+            You can also connect with me on{" "}
             <a
               href="https://www.linkedin.com/in/yousif-maqdasi-731578382/"
               target="_blank"

@@ -54,7 +54,11 @@ const NavBar = () => {
               <User className="w-5 h-5"></User>Contact
             </Link>
 
-            <a href="/Yousif Maqdasi Cv.pdf" target="_blank" className="flex items-center gap-2.5">
+            <a
+              href="/Yousif Maqdasi Cv.pdf"
+              target="_blank"
+              className="flex items-center gap-2.5"
+            >
               <File className="w-5 h-5"></File>Resume / CV
             </a>
           </div>

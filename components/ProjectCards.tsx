@@ -12,30 +12,32 @@ type Props = {
   projectName: string;
   projectDescription: string;
   projectLink: string;
-  projectImage: string
+  projectImage: string;
 };
 
 export function ProjectCard({
   projectName,
   projectDescription,
   projectLink,
-  projectImage
+  projectImage,
 }: Props) {
   return (
-    <Card className="relative mx-auto w-full max-w-sm pt-0 w-3/4">
+    <Card className="relative mx-auto pt-0 w-3/4 md:max-w-110 gap-6 cursor-pointer transition-transform duration-200 
+    hover:-translate-y-1">
       <div className="absolute inset-0 z-30 aspect-video" />
       <img
         src={projectImage}
         alt="Event cover"
         className="relative z-20 aspect-video w-full object-cover  "
-        
       />
       <CardHeader>
         <CardAction></CardAction>
-        <CardTitle className="px-5 py-2">{projectName}</CardTitle>
-        <CardDescription className="px-5 py-2">{projectDescription}</CardDescription>
+        <CardTitle className="px-3 py-2">{projectName}</CardTitle>
+        <CardDescription className="px-3 py-2">
+          {projectDescription}
+        </CardDescription>
       </CardHeader>
-      <CardFooter>
+      <CardFooter className="bg-transparent">
         <a
           href={`${projectLink}`}
           target="_blank"
