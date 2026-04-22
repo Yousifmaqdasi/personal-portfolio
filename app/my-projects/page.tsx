@@ -13,7 +13,7 @@ const ProjectPage = () => {
             Projects I've Built 
           </h1>
 
-          <p className="text-muted-foreground text-sm">(And actively improving)</p>i
+          <p className="text-muted-foreground text-sm">(And actively improving)</p>
 
           <p className="text-base text-muted-foreground leading-relaxed">
             My collection of projects, experiments, and systems I've built while
