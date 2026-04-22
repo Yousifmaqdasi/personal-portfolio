@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { TechStack } from "@/components/TechStacks";
+import SkillsCard from "@/components/SkillsCard";
 
 export default function Home() {
   return (
@@ -32,8 +33,8 @@ export default function Home() {
               src={"/IMG_0134 2.png"}
               alt="Yousif Maqdasi"
               className="rounded-[15px]"
-              width={230}
-              height={230}
+              width={210}
+              height={210}
             />
           </div>
 
@@ -45,46 +46,30 @@ export default function Home() {
           </Link>
         </section>
 
-        <section>
-          <h2 className="text-xl font-semibold tracking-tight mb-6">
+        <section className="mt-8">
+          <h2 className="text-xl font-semibold tracking-tight mb-8">
             Areas I Focus On as a Developer
           </h2>
 
           <div className="flex flex-col gap-4">
-            <div
-              className="bg-card border border-border p-7 rounded-xl h-34 justify-center flex flex-col 
-            hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer"
-            >
-              <p className="font-medium mb-1">Frontend</p>
+            <SkillsCard
+              title="Frontend"
+              description="Building responsive and performant interfaces."
+            ></SkillsCard>
 
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Building responsive and performant interfaces with React
-              </p>
-            </div>
+            <SkillsCard
+              title="Backend"
+              description="Scalable Node.js applications handling data, auth, and logic."
+            ></SkillsCard>
 
-            <div
-              className="bg-card border border-border p-7 rounded-xl h-34 justify-center flex flex-col 
-            hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer"
-            >
-              <p className="font-medium mb-1">Backend</p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Scalable Node.js applications handling data, auth, and logic.
-              </p>
-            </div>
-
-            <div
-              className="bg-card border border-border p-7 rounded-xl h-34 justify-center flex flex-col 
-            hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer"
-            >
-              <p className="font-medium mb-1">APIs</p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Clean, secure REST APIs for reliable communication.
-              </p>
-            </div>
+            <SkillsCard
+              title="APIs"
+              description=" Clean, secure REST APIs for reliable communication."
+            ></SkillsCard>
           </div>
         </section>
 
-        <section className="mt-12 text-left p-7 rounded-xl">
+        <section className="mt-8 text-left p-7 rounded-xl">
           <h2 className="text-xl font-semibold tracking-tight mb-5.5 ">
             My Journey Into Full-Stack Development
           </h2>
@@ -96,8 +81,8 @@ export default function Home() {
 
           <p className="text-sm text-muted-foreground leading-relaxed mb-4 m-auto">
             My journey started as a curiosity and over time, it became something
-            that i now genuinely enjoy. I like figuring things, solving annoying
-            problems out and pushing myself to the fullest.
+            that I now genuinely enjoy. I like figuring things out, solving
+            problems and pushing myself to the fullest.
           </p>
 
           <p className="text-sm text-muted-foreground leading-relaxed mb-4">
