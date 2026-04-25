@@ -22,33 +22,33 @@ export default function Home() {
           <div className="flex flex-col gap-4 md:flex-row md:flex-wrap">
             <SkillsCard
               title="Frontend"
-              description="Building responsive and performant interfaces."
-            ></SkillsCard>
+              description="Building fast, responsive interfaces with React, Tailwind, and modern TypeScript."
+            />
 
             <SkillsCard
               title="Backend"
-              description="Scalable Node.js applications handling data, auth, and logic."
-            ></SkillsCard>
+              description="Developing Node.js and Express services for handling data, logic, and authentication."
+            />
 
             <SkillsCard
               title="APIs"
-              description=" Clean, secure REST APIs for reliable communication."
-            ></SkillsCard>
+              description="Designing REST APIs with Express and structured routing for predictable communication."
+            />
 
             <SkillsCard
               title="Security"
-              description="Auth, validation, and protection against vulnerabilities."
-            ></SkillsCard>
+              description="Implementing JWT auth, input validation (Zod), and basic security best practices."
+            />
 
             <SkillsCard
               title="Databases"
-              description=" Efficient data modeling and queries."
-            ></SkillsCard>
+              description="Working with PostgreSQL and Drizzle to model data and write efficient queries."
+            />
 
             <SkillsCard
               title="Deployment"
-              description="Shipping apps to production environments."
-            ></SkillsCard>
+              description="Deploying applications using Docker, Vercel, and cloud-based environments."
+            />
           </div>
         </section>
 

@@ -30,7 +30,7 @@ const ProjectPage = () => {
 
       <div className="space-y-15 md:flex md:flex-row md:flex-wrap gap-9 md:m-8">
         <ProjectCard
-          projectName="JWT Authentication Service "
+          projectName="JWT Authentication Service (Under development) "
           projectDescription="A secure JWT-based authentication and authorization system with HTTP-only cookies, refresh 
           token handling, and protected routes. Built with a structured backend architecture 
           including validation and auth flows such as authenticating users and managing user sessions, 
@@ -40,7 +40,7 @@ const ProjectPage = () => {
         />
 
         <ProjectCard
-          projectName="ADHD-Focused Productivity App "
+          projectName="ADHD-Focused Productivity App (Under development) "
           projectDescription="A productivity application designed to support users with ADHD and similar focus challenges by 
           reducing overwhelm and improving task clarity. It centralizes school assignments by syncing with APIs, 
           calendars, and communication platforms, and breaks tasks into simple, actionable steps to help users stay 
