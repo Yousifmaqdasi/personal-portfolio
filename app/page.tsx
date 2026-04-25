@@ -19,7 +19,7 @@ export default function Home() {
             Areas I Focus On as a Developer
           </h2>
 
-          <div className="flex flex-col gap-4 md:flex-row md:flex-wrap">
+          <div className="flex flex-col gap-6 md:flex-row md:flex-wrap lg:w-230 item-center justify-center">
             <SkillsCard
               title="Frontend"
               description="Building fast, responsive interfaces with React, Tailwind, and modern TypeScript."
