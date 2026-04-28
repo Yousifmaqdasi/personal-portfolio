@@ -9,7 +9,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Yousif Maqdasi
           </p>
           <p className="text-xs text-neutral-400">
-            Fullstack Developer — Building simple and useful web apps.
+            Fullstack Developer
           </p>
         </div>
 
