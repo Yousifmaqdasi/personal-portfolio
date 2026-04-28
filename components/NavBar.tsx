@@ -55,7 +55,7 @@ const NavBar = () => {
             </Link>
 
             <a
-              href="/Yousif Maqdasi Cv.pdf"
+              href="/Yousif Maqdasi CV.png"
               target="_blank"
               className="flex items-center gap-2.5"
             >
