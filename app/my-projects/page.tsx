@@ -30,7 +30,7 @@ const ProjectPage = () => {
 
       <div className="space-y-15 md:flex md:flex-row md:flex-wrap gap-9 md:m-8">
         <ProjectCard
-          projectName="JWT Authentication Service (Under development) "
+          projectName="JWT Authentication Service"
           projectDescription="A secure JWT-based authentication and authorization system with HTTP-only cookies, refresh 
           token handling, and protected routes. Built with a structured backend architecture 
           including validation and auth flows such as authenticating users and managing user sessions, 
