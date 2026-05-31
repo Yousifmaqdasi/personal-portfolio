@@ -10,10 +10,12 @@ const ProjectPage = () => {
           </span>
 
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight mb-2">
-            Projects I've Built 
+            Projects I've Built
           </h1>
 
-          <p className="text-muted-foreground text-sm">(And actively improving)</p>
+          <p className="text-muted-foreground text-sm">
+            (And actively improving)
+          </p>
 
           <p className="text-base text-muted-foreground leading-relaxed">
             My collection of projects, experiments, and systems I've built while
@@ -40,12 +42,12 @@ const ProjectPage = () => {
         />
 
         <ProjectCard
-          projectName="ADHD-Focused Productivity App (Under development) "
+          projectName="ADHD-Focused Productivity App "
           projectDescription="A productivity application designed to support users with ADHD and similar focus challenges by 
           reducing overwhelm and improving task clarity. It centralizes school assignments by syncing with APIs, 
           calendars, and communication platforms, and breaks tasks into simple, actionable steps to help users stay 
           focused and organized while maintaining a clean and intuitive user experience."
-          projectLink=""
+          projectLink="https://group4.cc.k3s.chas-lab.dev/"
           projectImage="/mario-gogh-VBLHICVh-lI-unsplash.jpg"
         />
 
