@@ -47,7 +47,7 @@ const ProjectPage = () => {
           reducing overwhelm and improving task clarity. It centralizes school assignments by syncing with APIs, 
           calendars, and communication platforms, and breaks tasks into simple, actionable steps to help users stay 
           focused and organized while maintaining a clean and intuitive user experience."
-          projectLink="https://chasacademy.se/job/team-4-agera"
+          projectLink="https://github.com/Yousifmaqdasi/Agera"
           projectImage="/mario-gogh-VBLHICVh-lI-unsplash.jpg"
         />
 
